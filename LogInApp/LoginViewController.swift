@@ -66,6 +66,8 @@ class LoginViewController: UIViewController {
                                   completion: nil)}))
             present(alert, animated: true, completion: nil)
             
+            passwordTF.text = ""
+            
             return false
             
         } else {
