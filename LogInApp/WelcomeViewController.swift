@@ -15,7 +15,7 @@ class WelcomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        welcomeLabel.text = "Welcome, \(welcomeLabelIntermediary ?? " ")!"
+        welcomeLabel.text = "Welcome, \(welcomeLabelIntermediary ?? "")!"
     }
     @IBAction func logOutButtonPressed() {
         dismiss(animated: true)
