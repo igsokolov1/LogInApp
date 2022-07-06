@@ -17,7 +17,7 @@ class LoginViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
-        welcomeVC.welcomeLabelIntermediary = user
+        welcomeVC.welcomeLabelIntermediary = userNameTF.text
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -39,7 +39,7 @@ class LoginViewController: UIViewController {
     
     @IBAction func forgotRegisterData(_ sender: UIButton) {
         sender.tag == 0
-        ? showAlert(title: "Oops!", message: "Your User Name name is \(user)")
+        ? showAlert(title: "Oops!", message: "Your User Name is \(user)")
         : showAlert(title: "Oops!", message: "Your password is \(password)")
     }
     
